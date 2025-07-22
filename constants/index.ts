@@ -1,4 +1,5 @@
-import { FaYoutube, FaFacebook } from "react-icons/fa";
+import { FaYoutube, FaFacebook, FaStethoscope, FaSyringe, FaHeartbeat, FaUserMd, FaMicroscope, FaPills, FaAmbulance, FaHospital } from "react-icons/fa";
+import { FaDna, FaXRay, FaLungs, FaBrain, FaEye, FaTooth } from "react-icons/fa";
 import {
   RxDiscordLogo,
   RxGithubLogo,
@@ -9,80 +10,80 @@ import {
 
 export const SKILL_DATA = [
   {
-    skill_name: "HTML",
-    image: "html.png",
+    skill_name: "Electronic Health Records",
+    image: "emr.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "CSS",
-    image: "css.png",
+    skill_name: "Medical AI",
+    image: "medical-ai.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "JavaScript",
-    image: "js.png",
+    skill_name: "Telemedicine",
+    image: "telemedicine.png",
     width: 65,
     height: 65,
   },
   {
-    skill_name: "Tailwind CSS",
-    image: "tailwind.png",
+    skill_name: "Clinical Decision Support",
+    image: "clinical-support.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "React",
-    image: "react.png",
+    skill_name: "Medical Imaging",
+    image: "medical-imaging.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Redux",
-    image: "redux.png",
+    skill_name: "Patient Management",
+    image: "patient-management.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "React Query",
-    image: "reactquery.png",
+    skill_name: "Health Analytics",
+    image: "health-analytics.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "TypeScript",
-    image: "ts.png",
+    skill_name: "Medical Devices",
+    image: "medical-devices.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Next.js 14",
-    image: "next.png",
+    skill_name: "HIPAA Compliance",
+    image: "hipaa.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Framer Motion",
-    image: "framer.png",
+    skill_name: "Diagnostic Tools",
+    image: "diagnostic.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Stripe",
-    image: "stripe.png",
+    skill_name: "Pharmacy Systems",
+    image: "pharmacy.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Node.js",
-    image: "node.png",
+    skill_name: "Medical Research",
+    image: "research.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
+    skill_name: "Biomedical Data",
+    image: "biodata.png",
     width: 40,
     height: 40,
   },
@@ -90,80 +91,80 @@ export const SKILL_DATA = [
 
 export const SOCIALS = [
   {
-    name: "Instagram",
-    icon: RxInstagramLogo,
-    link: "https://instagram.com",
+    name: "LinkedIn",
+    icon: RxLinkedinLogo,
+    link: "https://linkedin.com/in/drsarahchen",
   },
   {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://facebook.com",
+    name: "Research Gate",
+    icon: FaMicroscope,
+    link: "https://researchgate.net",
   },
   {
-    name: "Twitter",
+    name: "Medical Twitter",
     icon: RxTwitterLogo,
-    link: "https://twitter.com",
+    link: "https://twitter.com/drsarahchen",
   },
 ] as const;
 
 export const FRONTEND_SKILL = [
   {
-    skill_name: "HTML",
-    image: "html.png",
+    skill_name: "Patient Portals",
+    image: "patient-portal.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "CSS",
-    image: "css.png",
+    skill_name: "Medical UI/UX",
+    image: "medical-ui.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "JavaScript",
-    image: "js.png",
+    skill_name: "Clinical Dashboards",
+    image: "clinical-dashboard.png",
     width: 65,
     height: 65,
   },
   {
-    skill_name: "Tailwind CSS",
-    image: "tailwind.png",
+    skill_name: "Health Monitoring",
+    image: "health-monitor.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Material UI",
-    image: "mui.png",
+    skill_name: "Medical Forms",
+    image: "medical-forms.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "React",
-    image: "react.png",
+    skill_name: "Appointment Systems",
+    image: "appointments.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Redux",
-    image: "redux.png",
+    skill_name: "Medical Charts",
+    image: "medical-charts.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "React Query",
-    image: "reactquery.png",
+    skill_name: "Lab Results",
+    image: "lab-results.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "TypeScript",
-    image: "ts.png",
+    skill_name: "Prescription Management",
+    image: "prescriptions.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Next.js 14",
-    image: "next.png",
+    skill_name: "Telehealth Interface",
+    image: "telehealth.png",
     width: 80,
     height: 80,
   },
@@ -171,50 +172,50 @@ export const FRONTEND_SKILL = [
 
 export const BACKEND_SKILL = [
   {
-    skill_name: "Node.js",
-    image: "node.png",
+    skill_name: "HL7 FHIR",
+    image: "fhir.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Express.js",
-    image: "express.png",
+    skill_name: "Medical APIs",
+    image: "medical-api.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
+    skill_name: "Clinical Databases",
+    image: "clinical-db.png",
     width: 40,
     height: 40,
   },
   {
-    skill_name: "Firebase",
-    image: "firebase.png",
+    skill_name: "DICOM Systems",
+    image: "dicom.png",
     width: 55,
     height: 55,
   },
   {
-    skill_name: "PostgreSQL",
-    image: "postgresql.png",
+    skill_name: "Medical Cloud",
+    image: "medical-cloud.png",
     width: 70,
     height: 70,
   },
   {
-    skill_name: "MySQL",
-    image: "mysql.png",
+    skill_name: "Health Data Security",
+    image: "health-security.png",
     width: 70,
     height: 70,
   },
   {
-    skill_name: "Prisma",
-    image: "prisma.png",
+    skill_name: "Medical Integration",
+    image: "medical-integration.png",
     width: 70,
     height: 70,
   },
   {
-    skill_name: "Graphql",
-    image: "graphql.png",
+    skill_name: "Clinical Workflows",
+    image: "clinical-workflow.png",
     width: 80,
     height: 80,
   },
@@ -222,27 +223,26 @@ export const BACKEND_SKILL = [
 
 export const FULLSTACK_SKILL = [
   {
-    skill_name: "React Native",
-    image: "reactnative.png",
+    skill_name: "Mobile Health Apps",
+    image: "mobile-health.png",
     width: 70,
     height: 70,
   },
   {
-    skill_name: "Tauri",
-    image: "tauri.png",
+    skill_name: "Medical IoT",
+    image: "medical-iot.png",
     width: 70,
     height: 70,
   },
   {
-    skill_name: "Docker",
-    image: "docker.png",
+    skill_name: "Healthcare DevOps",
+    image: "healthcare-devops.png",
     width: 70,
     height: 70,
   },
-
   {
-    skill_name: "Figma",
-    image: "figma.png",
+    skill_name: "Medical Design",
+    image: "medical-design.png",
     width: 50,
     height: 50,
   },
@@ -250,8 +250,8 @@ export const FULLSTACK_SKILL = [
 
 export const OTHER_SKILL = [
   {
-    skill_name: "Go",
-    image: "go.png",
+    skill_name: "Medical Machine Learning",
+    image: "medical-ml.png",
     width: 60,
     height: 60,
   },
@@ -259,86 +259,86 @@ export const OTHER_SKILL = [
 
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
+    title: "AI-Powered Diagnostic Platform",
     description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
-    image: "/projects/project-1.png",
-    link: "https://example.com",
+      'Revolutionary diagnostic platform leveraging artificial intelligence to assist healthcare professionals in making accurate diagnoses. Features advanced medical imaging analysis, symptom correlation algorithms, and integration with major EMR systems for seamless clinical workflow.',
+    image: "/projects/medical-ai-platform.png",
+    link: "https://medical-ai-platform.com",
   },
   {
-    title: "Interactive Cards Portfolio",
+    title: "Telemedicine Solution Suite",
     description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
-    image: "/projects/project-2.png",
-    link: "https://example.com",
+      'Comprehensive telemedicine platform enabling secure video consultations, remote patient monitoring, and digital prescription management. Built with HIPAA compliance, real-time vital sign integration, and multi-device accessibility for both patients and healthcare providers.',
+    image: "/projects/telemedicine-suite.png",
+    link: "https://telehealth-suite.com",
   },
   {
-    title: "Space Themed Website",
+    title: "Smart Hospital Management System",
     description:
-      'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
-    image: "/projects/project-3.png",
-    link: "https://example.com",
+      'Integrated hospital management system featuring patient flow optimization, resource allocation algorithms, and predictive analytics for bed management. Includes modules for staff scheduling, inventory management, and real-time emergency response coordination.',
+    image: "/projects/hospital-management.png",
+    link: "https://smart-hospital-system.com",
   },
 ] as const;
 
 export const FOOTER_DATA = [
   {
-    title: "Community",
+    title: "Medical Community",
     data: [
       {
-        name: "YouTube",
-        icon: FaYoutube,
-        link: "https://youtube.com",
+        name: "Medical Research",
+        icon: FaMicroscope,
+        link: "https://researchgate.net",
       },
       {
         name: "GitHub",
         icon: RxGithubLogo,
-        link: "https://github.com",
+        link: "https://github.com/drsarahchen",
       },
       {
-        name: "Discord",
+        name: "Medical Discord",
         icon: RxDiscordLogo,
-        link: "https://discord.com",
+        link: "https://discord.com/medical-tech",
       },
     ],
   },
   {
-    title: "Social Media",
+    title: "Professional Network",
     data: [
       {
-        name: "Instagram",
-        icon: RxInstagramLogo,
-        link: "https://instagram.com",
-      },
-      {
-        name: "Twitter",
-        icon: RxTwitterLogo,
-        link: "https://twitter.com",
-      },
-      {
-        name: "Linkedin",
+        name: "LinkedIn",
         icon: RxLinkedinLogo,
-        link: "https://linkedin.com",
+        link: "https://linkedin.com/in/drsarahchen",
+      },
+      {
+        name: "Medical Twitter",
+        icon: RxTwitterLogo,
+        link: "https://twitter.com/drsarahchen",
+      },
+      {
+        name: "Healthcare Forum",
+        icon: FaHospital,
+        link: "https://healthcare-forum.com",
       },
     ],
   },
   {
-    title: "About",
+    title: "Services",
     data: [
       {
-        name: "Become Sponsor",
+        name: "Medical Consulting",
         icon: null,
-        link: "https://youtube.com",
+        link: "https://medical-consulting.com",
       },
       {
-        name: "Learning about me",
+        name: "Health Tech Solutions",
         icon: null,
-        link: "https://example.com",
+        link: "https://healthtech-solutions.com",
       },
       {
-        name: "Contact Me",
+        name: "Contact",
         icon: null,
-        link: "mailto:contact@example.com",
+        link: "mailto:dr.sarah.chen@medtech.com",
       },
     ],
   },
@@ -346,11 +346,11 @@ export const FOOTER_DATA = [
 
 export const NAV_LINKS = [
   {
-    title: "About me",
+    title: "About",
     link: "#about-me",
   },
   {
-    title: "Skills",
+    title: "Expertise",
     link: "#skills",
   },
   {
@@ -360,5 +360,5 @@ export const NAV_LINKS = [
 ] as const;
 
 export const LINKS = {
-  sourceCode: "https://github.com/sanidhyy/space-portfolio",
+  sourceCode: "https://github.com/drsarahchen/medical-portfolio",
 };

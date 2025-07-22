@@ -6,21 +6,21 @@ import * as random from "maath/random";
 import { useState, useRef, Suspense } from "react";
 import type { Points as PointsType } from "three";
 
-export const StarBackground = (props: PointsProps) => {
+export const HeartBackground = (props: PointsProps) => {
   const ref = useRef<PointsType | null>(null);
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
+    random.inSphere(new Float32Array(3000), { radius: 1.5 })
   );
 
   useFrame((_state, delta) => {
     if (ref.current) {
-      ref.current.rotation.x -= delta / 10;
-      ref.current.rotation.y -= delta / 15;
+      ref.current.rotation.x -= delta / 20;
+      ref.current.rotation.y -= delta / 25;
     }
   });
 
   return (
-    <group rotation={[0, 0, Math.PI / 4]}>
+    <group rotation={[0, 0, Math.PI / 6]}>
       <Points
         ref={ref}
         stride={3}
@@ -30,8 +30,8 @@ export const StarBackground = (props: PointsProps) => {
       >
         <PointMaterial
           transparent
-          color="#fff"
-          size={0.002}
+          color="#dc2626"
+          size={0.003}
           sizeAttenuation
           depthWrite={false}
         />
@@ -40,11 +40,11 @@ export const StarBackground = (props: PointsProps) => {
   );
 };
 
-export const StarsCanvas = () => (
+export const MedicalCanvas = () => (
   <div className="w-full h-auto fixed inset-0 -z-10">
     <Canvas camera={{ position: [0, 0, 1] }}>
       <Suspense fallback={null}>
-        <StarBackground />
+        <HeartBackground />
       </Suspense>
     </Canvas>
   </div>

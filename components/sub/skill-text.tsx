@@ -1,6 +1,6 @@
 "use client";
 
-import { SparklesIcon } from "@heroicons/react/24/solid";
+import { HeartIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 
 import {
@@ -14,26 +14,26 @@ export const SkillText = () => {
     <div className="w-full h-auto flex flex-col items-center justify-center">
       <motion.div
         variants={slideInFromTop}
-        className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]"
+        className="Welcome-box py-[8px] px-[7px] border border-[#dc26268b] opacity-[0.9]]"
       >
-        <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
+        <HeartIcon className="text-[#dc2626] mr-[10px] h-5 w-5 heartbeat" />
         <h1 className="Welcome-text text-[13px]">
-          Think better with Next.js 14
+          Powered by Medical AI & Innovation
         </h1>
       </motion.div>
 
       <motion.div
         variants={slideInFromLeft(0.5)}
-        className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]"
+        className="text-[30px] text-slate-800 font-medium mt-[10px] text-center mb-[15px]"
       >
-        Making apps with modern technologies.
+        Building healthcare solutions with cutting-edge technology.
       </motion.div>
 
       <motion.div
         variants={slideInFromRight(0.5)}
-        className="cursive text-[20px] text-gray-200 mb-10 mt-[10px] text-center"
+        className="cursive text-[20px] text-slate-600 mb-10 mt-[10px] text-center"
       >
-        Never miss a task, deadline or idea.
+        Improving patient outcomes through innovation.
       </motion.div>
     </div>
   );
