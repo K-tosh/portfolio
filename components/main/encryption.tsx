@@ -45,7 +45,6 @@ export const MedicalSecurity = () => {
       </div>
 
       <div className="absolute z-[20] bottom-[10px] px-[5px]">
-        <div className="cursive text-[20px] font-medium text-center text-slate-700">
         <div className="cursive text-[20px] font-medium text-center text-gray-200">
           Protecting patient data with enterprise-grade security.
         </div>
