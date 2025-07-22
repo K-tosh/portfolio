@@ -23,7 +23,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
     <html lang="en">
       <body
         className={cn(
-          "bg-slate-50 overflow-y-scroll overflow-x-hidden medical-font",
+          "overflow-y-scroll overflow-x-hidden medical-font",
           inter.className
         )}
       >

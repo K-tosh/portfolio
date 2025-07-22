@@ -7,11 +7,11 @@ import { slideInFromTop } from "@/lib/motion";
 
 export const MedicalSecurity = () => {
   return (
-    <div className="flex flex-row relative items-center justify-center min-h-screen w-full h-full -z-20">
+    <div className="flex flex-row relative items-center justify-center min-h-screen w-full h-full -z-20 medical-section mx-4 my-8">
       <div className="absolute w-auto h-auto top-0 z-[5]">
         <motion.div
           variants={slideInFromTop}
-          className="text-[40px] font-medium text-center text-slate-800"
+          className="text-[40px] font-medium text-center text-white"
         >
           HIPAA{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-blue-600">
@@ -46,6 +46,7 @@ export const MedicalSecurity = () => {
 
       <div className="absolute z-[20] bottom-[10px] px-[5px]">
         <div className="cursive text-[20px] font-medium text-center text-slate-700">
+        <div className="cursive text-[20px] font-medium text-center text-gray-200">
           Protecting patient data with enterprise-grade security.
         </div>
       </div>

@@ -24,14 +24,14 @@ export const SkillText = () => {
 
       <motion.div
         variants={slideInFromLeft(0.5)}
-        className="text-[30px] text-slate-800 font-medium mt-[10px] text-center mb-[15px]"
+        className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]"
       >
         Building healthcare solutions with cutting-edge technology.
       </motion.div>
 
       <motion.div
         variants={slideInFromRight(0.5)}
-        className="cursive text-[20px] text-slate-600 mb-10 mt-[10px] text-center"
+        className="cursive text-[20px] text-gray-200 mb-10 mt-[10px] text-center"
       >
         Improving patient outcomes through innovation.
       </motion.div>

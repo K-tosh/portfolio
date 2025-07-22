@@ -30,7 +30,7 @@ export const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl text-bold text-slate-800 max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-6 text-6xl text-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
             Advancing{" "}
@@ -43,14 +43,14 @@ export const HeroContent = () => {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-slate-600 my-5 max-w-[600px]"
+          className="text-lg text-gray-200 my-5 max-w-[600px]"
         >
           I&apos;m a Medical Technology Specialist and Healthcare Innovation Leader with expertise in AI-powered diagnostics, telemedicine platforms, and clinical decision support systems. Explore my medical technology projects and healthcare solutions.
         </motion.p>
 
         <motion.a
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] font-medium"
+          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] font-medium medical-pulse"
         >
           View My Work
         </motion.a>

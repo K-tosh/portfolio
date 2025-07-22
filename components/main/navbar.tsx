@@ -9,7 +9,7 @@ export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001427] backdrop-blur-md z-50 px-10">
+    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[rgba(15,23,42,0.8)] backdrop-blur-md z-50 px-10 medical-section">
       {/* Navbar Container */}
       <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
         {/* Logo + Name */}
@@ -25,17 +25,17 @@ export const Navbar = () => {
             draggable={false}
             className="cursor-pointer heartbeat"
           />
-          <div className="hidden md:flex md:selffont-bold ml-[10px] text-slate-700">Dr. Sarah Chen</div>
+          <div className="hidden md:flex md:selffont-bold ml-[10px] text-white">Dr. Sarah Chen</div>
         </Link>
 
         {/* Web Navbar */}
         <div className="hidden md:flex w-[500px] h-full flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border-[rgba(30,64,175,0.38)] bg-[rgba(248,250,252,0.9)] mr-[15px] px-[20px] py-[10px] rounded-full text-slate-700 backdrop-blur-sm">
+          <div className="flex items-center justify-between w-full h-auto border-[rgba(30,64,175,0.38)] bg-[rgba(255,255,255,0.1)] mr-[15px] px-[20px] py-[10px] rounded-full text-white backdrop-blur-sm medical-glow">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.title}
                 href={link.link}
-                className="cursor-pointer hover:text-[rgb(30,64,175)] transition font-medium"
+                className="cursor-pointer hover:text-[rgb(220,38,38)] transition font-medium"
               >
                 {link.title}
               </Link>
@@ -46,7 +46,7 @@ export const Navbar = () => {
               href={LINKS.sourceCode}
               target="_blank"
               rel="noreferrer noopener"
-              className="cursor-pointer hover:text-[rgb(30,64,175)] transition font-medium"
+              className="cursor-pointer hover:text-[rgb(220,38,38)] transition font-medium"
             >
               Source Code
             </Link>
@@ -61,16 +61,16 @@ export const Navbar = () => {
               target="_blank"
               rel="noreferrer noopener"
               key={name}
-              className="hover:text-blue-600 transition"
+              className="hover:text-red-400 transition"
             >
-              <Icon className="h-6 w-6 text-slate-700" />
+              <Icon className="h-6 w-6 text-white" />
             </Link>
           ))}
         </div>
 
         {/* Hamburger Menu */}
         <button
-          className="md:hidden text-slate-700 focus:outline-none text-4xl"
+          className="md:hidden text-white focus:outline-none text-4xl"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           ☰
@@ -79,14 +79,14 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="absolute top-[65px] left-0 w-full bg-slate-50 p-5 flex flex-col items-center text-slate-700 md:hidden backdrop-blur-sm border-b border-slate-200">
+        <div className="absolute top-[65px] left-0 w-full bg-[rgba(15,23,42,0.9)] p-5 flex flex-col items-center text-white md:hidden backdrop-blur-sm border-b border-[rgba(255,255,255,0.1)] medical-section">
           {/* Links */}
           <div className="flex flex-col items-center gap-4">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.title}
                 href={link.link}
-                className="cursor-pointer hover:text-[rgb(30,64,175)] transition text-center font-medium"
+                className="cursor-pointer hover:text-[rgb(220,38,38)] transition text-center font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.title}
@@ -96,7 +96,7 @@ export const Navbar = () => {
               href={LINKS.sourceCode}
               target="_blank"
               rel="noreferrer noopener"
-              className="cursor-pointer hover:text-[rgb(30,64,175)] transition text-center font-medium"
+              className="cursor-pointer hover:text-[rgb(220,38,38)] transition text-center font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Source Code
@@ -111,9 +111,9 @@ export const Navbar = () => {
                 target="_blank"
                 rel="noreferrer noopener"
                 key={name}
-                className="hover:text-blue-600 transition"
+                className="hover:text-red-400 transition"
               >
-                <Icon className="h-8 w-8 text-slate-700" />
+                <Icon className="h-8 w-8 text-white" />
               </Link>
             ))}
           </div>

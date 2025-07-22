@@ -4,7 +4,7 @@ import { FOOTER_DATA } from "@/constants";
 
 export const Footer = () => {
   return (
-    <div className="w-full h-full bg-slate-100 text-slate-700 shadow-lg p-[15px] border-t border-slate-200">
+    <div className="w-full h-full bg-[rgba(15,23,42,0.9)] text-white shadow-lg p-[15px] border-t border-[rgba(255,255,255,0.1)] medical-section">
       <div className="w-full flex flex-col items-center justify-center m-auto">
         <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
           {FOOTER_DATA.map((column) => (
@@ -19,7 +19,7 @@ export const Footer = () => {
                   href={link}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="flex flex-row items-center my-[15px] hover:text-blue-600 transition"
+                  className="flex flex-row items-center my-[15px] hover:text-red-400 transition"
                 >
                   {Icon && <Icon />}
                   <span className="text-[15px] ml-[6px]">{name}</span>
